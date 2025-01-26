@@ -1,5 +1,4 @@
 # Student_Quiz_Performance_Analysis
-# Quiz Data Processing and Analysis
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -20,7 +19,7 @@ This project focuses on:
 - Python
 - Pandas for data manipulation
 - Requests for API communication
-- Jupyter Notebook (or any Python IDE) for code execution
+- Jupyter Notebook for code execution
 
 ## Setup Instructions
 ### Prerequisites:
@@ -32,11 +31,11 @@ pip install pandas requests
 ```
 ### Clone or Download the Project:
 ```bash
-git clone https://github.com/your-repo-link/quiz-data-analysis.git  
-cd quiz-data-analysis 
+git clone https://github.com/PRANAYBHUMAGOUNI/Student_Quiz_Performance_Analysis  
+cd personalized-Student_Recommendations
 ```
 ### Run the Script:
-Execute the script in your Jupyter.
+Execute the script in your Jupyter Notebook.
 
 # Features
 
@@ -66,7 +65,7 @@ Execute the script in your Jupyter.
 
 ## Loading and Analyzing Historical Quiz Data
 - Fetches user quiz performance data from another API: [https://api.jsonserve.com/XgAgFJ](https://api.jsonserve.com/XgAgFJ).
-- Normalizes historical data into a DataFrame for accuracy, speed, and score analysis.
+- Normalizes historical data into a DataFrame for accuracy and score analysis.
 
 ## Code Workflow
 ### Importing Libraries
@@ -96,17 +95,17 @@ The script fetches the current quiz JSON data from the API and converts it into 
 ## Loading Historical Quiz Data
 - **Historical data API**: [https://api.jsonserve.com/XgAgFJ](https://api.jsonserve.com/XgAgFJ).
 - Extracts and normalizes columns like:
-  - Score
-  - Accuracy
-  - Speed
-  - Timestamps for submission and creation
+  - Avg_Score
+  - Avg_Accuracy
+  - Recommendation
+  - Student Persona
 
 ## Output Generation
 - Outputs cleaned and structured data as Pandas DataFrames for easy export.
 
 ### File Outputs
-- **questions_df**: DataFrame containing detailed question-level analysis, including correct/incorrect counts and solutions.
-- **historical_quiz_df**: DataFrame containing user quiz performance metrics such as score, accuracy, and speed.
+- **questions_df**: DataFrame containing detailes about student present details about Quizs.
+- **historical_quiz_df**: DataFrame containing student previous quiz performances.
 
 ## Future Enhancements
 - **Visualization**: Add support for visualizing quiz performance metrics using libraries like Matplotlib or Seaborn.
@@ -114,9 +113,6 @@ The script fetches the current quiz JSON data from the API and converts it into 
 - **API Integration**: Include support for live updates from APIs.
 - **Error Handling**: Enhance error handling for API failures or JSON parsing issues.
 
----
-
-*Current date: Sunday, January 26, 2025, 10 PM IST*
 
 
 
